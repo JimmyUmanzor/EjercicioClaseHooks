@@ -50,16 +50,16 @@ setEstudiantes((prevEstudiantes) => [...prevEstudiantes, ...nuevosEstudiantes]);
 const styles = StyleSheet.create({
   contenedor: {
     flex: 2,
-    backgroundColor: 'blue',
+    backgroundColor: 'white',
   },
   titulo: {
     fontSize: 36,
     fontWeight: 'bold',
     textAlign: 'center',
-    marginBottom: 20,
+    marginBottom: 20
   },
   texto: {
     fontSize: 18
-    
+
   },
 });
