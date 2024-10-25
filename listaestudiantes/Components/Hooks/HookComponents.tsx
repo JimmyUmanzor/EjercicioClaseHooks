@@ -59,6 +59,7 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
   texto: {
-    fontSize: 18,
+    fontSize: 18
+    
   },
 });
