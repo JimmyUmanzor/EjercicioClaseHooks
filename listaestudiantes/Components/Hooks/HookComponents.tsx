@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { View, Text, FlatList, StyleSheet } from 'react-native';
 import { Estudiante } from '../../Modelos/Estudiante';
+import { EstudiantesProvider } from '../../Context/EstudiantesContext';
 
 export default function Lista() {
   const [estudiantes, setEstudiantes] = useState([
@@ -26,6 +27,7 @@ useEffect(() => {
     { id: '15', nombre: 'Fernando' }, ];
 setEstudiantes((prevEstudiantes) => [...prevEstudiantes, ...nuevosEstudiantes]);
     }, 5000);
+    return () => clearTimeout(temporizador);
    }, []);
 
   const renderEstudiante = ({ item }: { item: Estudiante }) => (
